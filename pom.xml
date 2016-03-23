@@ -15,6 +15,7 @@
     </properties>
     
     <modules>
+	<module>thymeleaf-banner-spring-boot-starter</module>
 	<module>demo</module>        
     </modules>
     
