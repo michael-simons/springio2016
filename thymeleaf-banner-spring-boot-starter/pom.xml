@@ -26,6 +26,16 @@
 	<dependency>
 	    <groupId>org.springframework.boot</groupId>
 	    <artifactId>spring-boot-autoconfigure</artifactId>
+	</dependency>	
+	<dependency>
+	    <groupId>org.thymeleaf</groupId>
+	    <artifactId>thymeleaf</artifactId>
+	    <optional>true</optional>
+	</dependency>
+	<dependency>
+	    <groupId>org.thymeleaf</groupId>
+	    <artifactId>thymeleaf-spring4</artifactId>
+	    <optional>true</optional>
 	</dependency>
     </dependencies>
 </project>
