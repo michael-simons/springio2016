@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration = \
+  ac.simons.springio2016.starter.ThymeleafBannerAutoConfiguration

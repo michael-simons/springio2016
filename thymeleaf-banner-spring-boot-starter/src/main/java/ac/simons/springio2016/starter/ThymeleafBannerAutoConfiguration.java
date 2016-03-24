@@ -1,6 +1,5 @@
-package ac.simons.springio2016.demo;
+package ac.simons.springio2016.starter;
 
-import ac.simons.springio2016.starter.SomeBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
