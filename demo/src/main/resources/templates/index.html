@@ -15,18 +15,7 @@
 	<link href="../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
 	<link href="../static/css/demo.css" th:href="@{/css/demo.css}" rel="stylesheet" />	
 	
-	<script type="text/javascript" src="../static/js/ansi_up.js" th:src="@{/js/ansi_up.js}"></script>	
-	<script type="text/javascript">
-	    //<![CDATA[
-	    document.addEventListener('DOMContentLoaded', function(event) { 
-		var banner = document.getElementsByClassName('banner');
-		for (var i = 0; i < banner.length; ++i) {
-		    banner[i].innerHTML = ansi_up.ansi_to_html(banner[i].innerHTML);
-		}
-	    });
-	    //]]>
-	</script>
-	
+	<banner:enableAnsiBanners />	
     </head>
     <body>
 	<div class="container">
