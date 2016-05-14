@@ -2,6 +2,7 @@ package ac.simons.springio2016.starter;
 
 import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.Banner;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;
 import org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration;
@@ -17,7 +18,6 @@ import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
 import org.springframework.core.env.Environment;
-import org.springframework.core.io.ResourceLoader;
 import org.thymeleaf.spring4.SpringTemplateEngine;
 
 @Configuration
@@ -65,10 +65,10 @@ class ThymeleafBannerAutoConfiguration {
     @ConditionalOnMissingBean(BannerSupplier.class)
     @Order(-10)
     public BannerSupplier defaultBannerSupplier(
-	    final ResourceLoader resourceLoader,
+	    final Banner banner,
 	    final Environment environment
     ) throws ClassNotFoundException {
-	return new ThymeleafBannerSupplier(environment, resourceLoader);
+	return new ThymeleafBannerSupplier(banner, environment);
     }
 
     @Bean
