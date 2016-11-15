@@ -1,4 +1,11 @@
 # It's a kind of magic? - Custom Spring Boot Starter
+
+## Slides
+
+The slides are inside this repository and also on Speakerdeck:
+
+[It's a kind of magic? - Custom Spring Boot Starter](https://speakerdeck.com/michaelsimons/its-a-kind-of-magic-custom-spring-boot-starter)
+
 ## Talk at Spring I/O 2016
 
 This repository contains the talk, including my notes and the complete demo, I've created for [Spring I/O 2016](http://www.springio.net) in Barcelona.
